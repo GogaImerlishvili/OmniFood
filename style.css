@@ -841,6 +841,34 @@ z-index: -1;
     color: #555;
 }
 
+
+.progress{
+    height: 4px;
+    width: 28rem;
+    background-color: cadetblue;
+    position: absolute;
+    overflow: hidden;
+    left: 40%;
+}
+
+.progress .inner{
+    height: 100%;
+    background-color: rgb(36, 36, 40);
+    position: absolute;
+    animation: progress 1s infinite;
+}
+
+@keyframes progress {
+    from {
+        left: -5%;
+        width: 5%;
+    }
+    to{
+        left: 105%;
+        width: 75%;
+    }
+}
+
 /* *:focus{
     outline: none;
     outline: 4px ;
